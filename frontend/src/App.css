@@ -1,0 +1,327 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&display=swap');
+
+
+/*   ----- Variables  -----  */
+:root {
+    --custom-color-name:;
+    --custom-embellishment-name:;
+    --deepBlue: #26310f; /* deep greenish blue */
+    --sage: #8EA65Bee; /* sage */
+    --lightGreen: #EEFAABcc; /* light green with alpha transparency */
+    --lightBrown: #A99D50; /* light brown */
+    --earthyBrown: #8C7961; /* earthy brown */
+
+  }
+  
+  /*  ----- Viewport ----- */
+  body {       
+    background-image: url(images/michigan-woods-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: var(--deepBlue);
+    font-family: 'Enriqueta', serif;
+    margin: 0 auto;
+    padding: 0%;
+    max-width: 75%;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    color: var(--deepBlue);
+    background-color: var(--earthyBrown);
+    margin: 0 auto;
+    padding: 2%;
+  }
+  header img {width: 70px; padding-right: 20px;} 
+  main {
+    color: var(--deepBlue);
+    background-color: var(--sage);
+    margin: 0 auto;
+    padding: 4%;
+    border: 2px solid var(--deepBlue);
+
+  }
+  section {}
+  article {
+    margin-top: auto;
+  }
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    color: var(--deepBlue);
+    background-color: var(--lightGreen);
+    margin: 0 auto;
+    padding: 2%;
+  }
+  
+  /* ----- Anchors ----- */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation -----   */
+  nav {
+    margin: auto;
+    display: flex;
+    width: 100%;
+  }
+  nav a {
+    background-color: var(--earthyBrown);
+    color: var(--deepBlue);
+    text-decoration: none;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+  }
+
+  .local {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+  }
+   
+  .local a {
+    text-decoration: none;
+    background-color: var(--lightGreen);
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Mono', monospace;
+  } 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    border-collapse: collapse;
+    background-color: var(--lightGreen);
+    color: var(--deepBlue);
+    width: 98%;
+  }
+
+  caption {
+    border-bottom: 2px dotted;
+    background-color: var(--lightGreen);
+    color: var(--deepBlue);
+    padding: 1%;
+  }
+
+  tbody {
+    text-align: center;
+  }
+  
+  tr th {
+    border-bottom: 2px dotted;
+    padding: 1%;
+  }
+
+  tr td {
+    border-bottom: 2px dotted;
+    padding: 1%;
+  }
+  
+  /*
+  thead {} 
+    tr:nth-child(even) {}
+    td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {} */
+  
+  
+  /*  ----- Form ----- */
+  form, button, input, select, textarea {
+    font-family: 'Enriqueta', serif;
+    font-size: 120%;
+    color: var(--deepBlue);
+  }
+  fieldset {
+    border: 3px dotted var(--deepBlue);
+    background-color: var(--lightBrown);
+    margin-bottom: 2%;
+  }
+    legend {
+      font-size: 120%;
+      font-weight: 800;
+      background-color: var(--sage);
+    }
+  label {
+    display: block;
+    margin: 1%;
+  }
+
+  input, button, textarea, select {
+    padding: 10px;
+    font-family: inherit;
+  }
+  
+  input::placeholder {
+    color: darkslategray;
+  }
+  
+  textarea::placeholder{
+    color: darkslategray;
+  }
+
+  textarea {
+    width: 95%;
+    height: 200px;
+  }
+
+  button {
+    background-color: var(--lightGreen);
+    border-radius: 25px;
+  }
+
+  select {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /*  optgroup {}
+    option {}
+  output {}
+  meter {}
+  progress {} */
+  
+  
+  /* ----- Media ----- */
+  figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery figure {
+    width: 450px;
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid var(--deepBlue);
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery figcaption {
+    display: block;
+    padding: 1%;
+    font-size: larger;
+    color: var(--deepBlue);
+    font-weight: 800;
+  }
+
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  

@@ -1,0 +1,19 @@
+{
+  "name": "packers-starter-backend",
+  "version": "2023",
+  "description": "The Green Bay Packers' score margins from the 2024 season.",
+  "main": "packers-controller.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon packers-controller.mjs"
+  },
+  "author": "Danny Caspary",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "rest": "^2.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
