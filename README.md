@@ -37,20 +37,7 @@ The backend supports CORS and parses incoming JSON with middleware. It is design
 ---
 
 ## Folder Structure
-
-root
-├── client/ # React frontend
-│ ├── public/
-│ │ └── index.html
-│ └── src/
-│ ├── App.js
-│ ├── App.css
-│ ├── components/
-│ └── pages/
-├── server/ # Express backend
-│ ├── models/
-│ ├── routes/
-│ └── server.js
+<pre> <code>```text root ├── client/ # React frontend │ ├── public/ │ │ └── index.html │ └── src/ │ ├── App.js │ ├── App.css │ ├── components/ │ └── pages/ ├── server/ # Express backend ├── models/ ├── routes/ └── server.js ```</code> </pre>
 
 
 ---
@@ -70,20 +57,23 @@ root
    cd cs290-final-project
 
 2. Install backend and frontend dependencies:
+```bash
 cd server
 npm install
 
 cd ../client
 npm install
-
+```
 3. Start the backend:
+```bash
 cd ../server
 node server.js
-
-4. Start the frontend:
+```
+5. Start the frontend:
+```bash
 cd ../client
 npm start
-
+```
 By default:
 
     Frontend runs on http://localhost:3000
