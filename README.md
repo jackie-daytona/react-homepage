@@ -37,8 +37,21 @@ The backend supports CORS and parses incoming JSON with middleware. It is design
 ---
 
 ## Folder Structure
-<pre> <code>```text root ├── client/ # React frontend │ ├── public/ │ │ └── index.html │ └── src/ │ ├── App.js │ ├── App.css │ ├── components/ │ └── pages/ ├── server/ # Express backend ├── models/ ├── routes/ └── server.js ```</code> </pre>
-
+```text
+root
+├── client/          # React frontend
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.js
+│       ├── App.css
+│       ├── components/
+│       └── pages/
+├── server/          # Express backend
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+```
 
 ---
 
